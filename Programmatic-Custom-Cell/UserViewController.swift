@@ -87,7 +87,7 @@ extension UserViewController:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailedVC = DetailedViewController()
         let info = randomUser[indexPath.row]
-        //detailedVC.randomUserDetail = info
+        detailedVC.randomUserDetail = info
         
         self.navigationController?.pushViewController(detailedVC, animated: true)
     }
